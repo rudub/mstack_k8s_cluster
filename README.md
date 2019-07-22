@@ -35,6 +35,7 @@
     
 ### 2. Create NGINX-controller service
      kubectl apply -f nginx-controller-service.yaml
+     This will create load balancer to AWS.
 
 ### 3. NGINX-Ingress-Controller Configuration
      kubectl apply -f nginx-controller.yaml
@@ -49,3 +50,6 @@
     
 ### 5. Create ingress for guestbook application
      kubectl apply -f staging-ingress.yaml
+     Browse through loadbalancer DNS name and see the Guest page frontend should be visible.
+     
+     
